@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #D5CCC5;
+  color: #0F3592;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .print-break {
+    page-break-after: always;
+  }
+}
